@@ -1,0 +1,95 @@
+.text:00000001800991DD                 cmp     dword ptr [rbp+38h], 0
+.text:00000001800991E1                 jz      short loc_180099227
+.text:00000001800991E3                 cmp     cs:dword_18011F030, 2
+.text:00000001800991EA                 mov     ebx, 80070005h
+.text:00000001800991EF                 jbe     loc_1800992C9
+.text:00000001800991F5                 lea     rax, aCenforcementco_5 ; "CEnforcementCore::GetInstanceOfTSLicens"...
+
+
+.text:0000000180018F10
+.text:0000000180018F10 ; =============== S U B R O U T I N E =======================================
+.text:0000000180018F10
+.text:0000000180018F10 ; Attributes: bp-based frame
+.text:0000000180018F10
+.text:0000000180018F10 sub_180018F10   proc near               ; CODE XREF: .text:0000000180018E78↑p
+.text:0000000180018F10                                         ; sub_18007CFD0+7↓j
+.text:0000000180018F10                                         ; DATA XREF: ...
+.text:0000000180018F10
+.text:0000000180018F10 var_50          = qword ptr -50h
+.text:0000000180018F10 var_48          = qword ptr -48h
+.text:0000000180018F10 var_40          = qword ptr -40h
+.text:0000000180018F10 var_38          = qword ptr -38h
+.text:0000000180018F10 var_30          = qword ptr -30h
+.text:0000000180018F10 var_28          = qword ptr -28h
+.text:0000000180018F10 var_20          = qword ptr -20h
+.text:0000000180018F10 var_18          = dword ptr -18h
+.text:0000000180018F10 var_10          = qword ptr -10h
+.text:0000000180018F10 var_8           = dword ptr -8
+.text:0000000180018F10 var_4           = dword ptr -4
+.text:0000000180018F10 arg_8           = dword ptr  38h
+.text:0000000180018F10 arg_10          = qword ptr  40h
+.text:0000000180018F10 arg_18          = qword ptr  48h
+.text:0000000180018F10
+.text:0000000180018F10 ; FUNCTION CHUNK AT .text:0000000180031194 SIZE 000001A9 BYTES
+.text:0000000180018F10
+.text:0000000180018F10                 push    rbp
+.text:0000000180018F12                 push    rbx
+.text:0000000180018F13                 push    rsi
+.text:0000000180018F14                 push    rdi
+.text:0000000180018F15                 push    r14
+.text:0000000180018F17                 mov     rbp, rsp
+.text:0000000180018F1A                 sub     rsp, 70h
+.text:0000000180018F1E                 xor     edi, edi
+.text:0000000180018F20                 mov     r14d, 1
+.text:0000000180018F26                 cmp     cs:dword_18011FECC, edi
+.text:0000000180018F2C                 mov     rsi, rdx
+.text:0000000180018F2F                 mov     [rdx], r14d
+.text:0000000180018F32                 jz      loc_180031194
+.text:0000000180018F38
+.text:0000000180018F38 loc_180018F38:                          ; CODE XREF: sub_180018F10+1828D↓j
+.text:0000000180018F38                 cmp     cs:dword_18011FEDC, edi
+.text:0000000180018F3E                 jnz     loc_18003122E
+.text:0000000180018F44                 mov     [rsi], r14d
+.text:0000000180018F47                 mov     ebx, edi
+.text:0000000180018F49
+.text:0000000180018F49 loc_180018F49:                          ; CODE XREF: sub_180018F10+18319↓j
+.text:0000000180018F49                                         ; sub_180018F10+18428↓j
+.text:0000000180018F49                 cmp     ebx, 80070002h
+.text:0000000180018F4F                 cmovnz  edi, ebx
+.text:0000000180018F52                 mov     eax, edi
+.text:0000000180018F54                 add     rsp, 70h
+.text:0000000180018F58                 pop     r14
+.text:0000000180018F5A                 pop     rdi
+.text:0000000180018F5B                 pop     rsi
+.text:0000000180018F5C                 pop     rbx
+.text:0000000180018F5D                 pop     rbp
+.text:0000000180018F5E                 retn
+.text:0000000180018F5E sub_180018F10   endp
+
+
+.text:000000018001BA00                 sub     rsp, 28h
+.text:000000018001BA04                 mov     eax, [rcx+644h]
+.text:000000018001BA0A                 xor     r8d, r8d
+.text:000000018001BA0D                 mov     [rdx], eax
+.text:000000018001BA0F                 mov     eax, [rcx+638h]
+.text:000000018001BA15                 cmp     [rcx+63Ch], eax
+.text:000000018001BA1B                 jz      loc_1800326DA
+
+
+.text:0000000180026E50 loc_180026E50:                          ; CODE XREF: sub_180008A84:loc_18002A628↓p
+.text:0000000180026E50                                         ; sub_180008AC8:loc_18002A6E1↓p ...
+.text:0000000180026E50                 push    rdi
+.text:0000000180026E52                 sub     rsp, 540h
+.text:0000000180026E59                 mov     rax, cs:__security_cookie
+.text:0000000180026E60                 xor     rax, rsp
+.text:0000000180026E63                 mov     [rsp+530h], rax
+.text:0000000180026E6B                 mov     dword ptr [rsp+40h], 80004001h
+.text:0000000180026E73                 mov     dword ptr [rsp+44h], 0
+.text:0000000180026E7B                 lea     rax, [rsp+410h]
+.text:0000000180026E83                 mov     rdi, rax
+.text:0000000180026E86                 xor     eax, eax
+.text:0000000180026E88                 mov     ecx, 11Ch
+.text:0000000180026E8D                 rep stosb
+.text:0000000180026E8F                 mov     dword ptr [rsp+410h], 11Ch
+.text:0000000180026E9A                 lea     rcx, [rsp+410h]
+.text:0000000180026EA2                 call    cs:GetVersionExW
