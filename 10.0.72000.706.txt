@@ -1,0 +1,71 @@
+.text:0000000180098CAD                 cmp     [rbp+arg_18], 0
+.text:0000000180098CB1                 jz      short loc_180098CF7
+.text:0000000180098CB3                 cmp     cs:dword_18011F030, 2
+.text:0000000180098CBA                 mov     ebx, 80070005h
+.text:0000000180098CBF                 jbe     loc_180098D99
+.text:0000000180098CC5                 lea     rax, aCenforcementco_5 ; "CEnforcementCore::GetInstanceOfTSLicens"...
+----
+.text:0000000180018F10 sub_180018F10   proc near               ; CODE XREF: sub_180018E30+48↑p
+.text:0000000180018F10                                         ; sub_18007CAA0+7↓j
+.text:0000000180018F10                                         ; DATA XREF: ...
+.text:0000000180018F10
+.text:0000000180018F10 var_50          = qword ptr -50h
+.text:0000000180018F10 var_48          = qword ptr -48h
+.text:0000000180018F10 var_40          = qword ptr -40h
+.text:0000000180018F10 var_38          = qword ptr -38h
+.text:0000000180018F10 var_30          = qword ptr -30h
+.text:0000000180018F10 var_28          = qword ptr -28h
+.text:0000000180018F10 var_20          = qword ptr -20h
+.text:0000000180018F10 var_18          = dword ptr -18h
+.text:0000000180018F10 var_10          = qword ptr -10h
+.text:0000000180018F10 var_8           = dword ptr -8
+.text:0000000180018F10 var_4           = dword ptr -4
+.text:0000000180018F10 arg_8           = dword ptr  38h
+.text:0000000180018F10 arg_10          = qword ptr  40h
+.text:0000000180018F10 arg_18          = qword ptr  48h
+.text:0000000180018F10
+.text:0000000180018F10 ; FUNCTION CHUNK AT .text:0000000180030F54 SIZE 000001A9 BYTES
+.text:0000000180018F10
+.text:0000000180018F10                 push    rbp
+.text:0000000180018F12                 push    rbx
+.text:0000000180018F13                 push    rsi
+.text:0000000180018F14                 push    rdi
+.text:0000000180018F15                 push    r14
+.text:0000000180018F17                 mov     rbp, rsp
+.text:0000000180018F1A                 sub     rsp, 70h
+.text:0000000180018F1E                 xor     edi, edi
+.text:0000000180018F20                 mov     r14d, 1
+.text:0000000180018F26                 cmp     cs:dword_18011FECC, edi
+.text:0000000180018F2C                 mov     rsi, rdx
+.text:0000000180018F2F                 mov     [rdx], r14d
+.text:0000000180018F32                 jz      loc_180030F54
+----
+.text:000000018001BA00 sub_18001BA00   proc near               ; DATA XREF: .rdata:00000001800D4BA0↓o
+.text:000000018001BA00                                         ; .rdata:00000001800DA1CA↓o ...
+.text:000000018001BA00
+.text:000000018001BA00 ; FUNCTION CHUNK AT .text:000000018003249A SIZE 0000001C BYTES
+.text:000000018001BA00
+.text:000000018001BA00                 sub     rsp, 28h
+.text:000000018001BA04                 mov     eax, [rcx+644h]
+.text:000000018001BA0A                 xor     r8d, r8d
+.text:000000018001BA0D                 mov     [rdx], eax
+.text:000000018001BA0F                 mov     eax, [rcx+638h]
+.text:000000018001BA15                 cmp     [rcx+63Ch], eax
+.text:000000018001BA1B                 jz      loc_18003249A
+----
+.text:0000000180026C10 ; __unwind { // __GSHandlerCheck
+.text:0000000180026C10                 push    rdi
+.text:0000000180026C12                 sub     rsp, 540h
+.text:0000000180026C19                 mov     rax, cs:__security_cookie
+.text:0000000180026C20                 xor     rax, rsp
+.text:0000000180026C23                 mov     [rsp+548h+var_18], rax
+.text:0000000180026C2B                 mov     [rsp+548h+var_508], 80004001h
+.text:0000000180026C33                 mov     [rsp+548h+var_504], 0
+.text:0000000180026C3B                 lea     rax, [rsp+548h+VersionInformation]
+.text:0000000180026C43                 mov     rdi, rax
+.text:0000000180026C46                 xor     eax, eax
+.text:0000000180026C48                 mov     ecx, 11Ch
+.text:0000000180026C4D                 rep stosb
+.text:0000000180026C4F                 mov     [rsp+548h+VersionInformation.dwOSVersionInfoSize], 11Ch
+.text:0000000180026C5A                 lea     rcx, [rsp+548h+VersionInformation] ; lpVersionInformation
+.text:0000000180026C62                 call    cs:GetVersionExW
